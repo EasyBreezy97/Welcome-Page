@@ -46,7 +46,7 @@ const loadWeather = () => {
 	}
 
 
-	xhr.open("GET", `http://api.openweathermap.org/data/2.5/weather?lat=${globals.latitude}&lon=${globals.longitude}&APPID=c3d6b97b5191ae33142bf545e04f2398&units=metric`, true);
+	xhr.open("GET", `https://api.openweathermap.org/data/2.5/weather?lat=${globals.latitude}&lon=${globals.longitude}&APPID=c3d6b97b5191ae33142bf545e04f2398&units=metric`, true);
 
 	xhr.onerror = function () {
 		weatherInfo.textContent = "Error while loading weather"
